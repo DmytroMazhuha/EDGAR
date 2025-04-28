@@ -1,6 +1,6 @@
 drop table if exists edgar.tags;
 CREATE TABLE edgar.tags (
-	dateinsert TIMESTAMPTZ(6) NOT NULL DEFAULT now(),    
+	dateinsert TIMESTAMP(6) NOT NULL DEFAULT now(),    
 	tag VARCHAR(256) NOT NULL,          -- Unique identifier for a tag
     version VARCHAR(20) NOT NULL,      -- Taxonomy identifier or accession number
     custom BOOLEAN,           -- 1 if custom, 0 if standard
