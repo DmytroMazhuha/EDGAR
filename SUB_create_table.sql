@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS public.sub;
-CREATE TABLE SUB (
+DROP TABLE IF EXISTS edgar.sub;
+CREATE TABLE edgar.sub (
     dateinsert TIMESTAMP(6) NOT NULL DEFAULT now(),
     adsh VARCHAR(20) not NULL, -- Accession Number, 20-character alphanumeric
     cik NUMERIC(10, 0) , -- Central Index Key (CIK)

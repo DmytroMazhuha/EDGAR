@@ -1,5 +1,5 @@
-drop table if exists public.tags;
-CREATE TABLE public.num (
+drop table if exists edgar.num;
+CREATE TABLE edgar.num (
     dateinsert TIMESTAMPTZ(6) NOT NULL DEFAULT now(), 
 	adsh VARCHAR(20) NOT NULL,          -- Accession Number
     tag VARCHAR(256) NOT NULL,          -- Unique identifier for a tag
